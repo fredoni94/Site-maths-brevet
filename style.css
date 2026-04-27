@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef4ff;
+  color: #172033;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+.app {
+  max-width: 980px;
+  margin: auto;
+  padding: 18px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  border-radius: 28px;
+  padding: 22px;
+  margin-bottom: 22px;
+  box-shadow: 0 18px 45px rgba(37, 99, 235, 0.28);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: white;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+}
+
+.nav-btn {
+  background: rgba(255,255,255,.18);
+  color: white;
+  border: 1px solid rgba(255,255,255,.4);
+  padding: 10px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.hero-content {
+  max-width: 720px;
+  padding: 52px 10px 34px;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255,255,255,.16);
+  border: 1px solid rgba(255,255,255,.3);
+  padding: 8px 14px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 6vw, 4.8rem);
+  line-height: 1;
+  margin: 0 0 18px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.hero p,
+.muted,
+.signup-card p {
+  color: #dbeafe;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+
+.card {
+  background: rgba(255,255,255,.96);
+  border-radius: 26px;
+  padding: 26px;
+  margin-bottom: 20px;
+  box-shadow: 0 12px 35px rgba(31,41,55,.10);
+}
+
+.subjects-grid,
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.subject {
+  border: none;
+  border-radius: 20px;
+  padding: 22px;
+  background: #f3f6ff;
+  text-align: left;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.subject:hover,
+.option-grid button:hover {
+  transform: translateY(-2px);
+}
+
+.subject strong {
+  display: block;
+  font-size: 18px;
+  margin: 8px 0 4px;
+}
+
+.subject small {
+  color: #64748b;
+}
+
+.emoji {
+  font-size: 26px;
+}
+
+.active,
+.selected {
+  background: linear-gradient(135deg, #2563eb, #7c3aed) !important;
+  color: white !important;
+}
+
+.active small {
+  color: #e0e7ff;
+}
+
+.disabled {
+  opacity: .55;
+  cursor: not-allowed;
+}
+
+.primary,
+.secondary,
+.option-grid button {
+  border: none;
+  border-radius: 16px;
+  padding: 15px 18px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.primary {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  font-weight: 800;
+}
+
+.secondary {
+  background: white;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.large {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.signup-form {
+  display: flex;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.signup-form input,
+.answer-input {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid #dbe3f0;
+  border-radius: 16px;
+  font-size: 17px;
+}
+
+.signup-card p {
+  color: #64748b;
+}
+
+.hidden {
+  display: none;
+}
+
+.topbar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.pill {
+  background: #f3f6ff;
+  border-radius: 999px;
+  padding: 12px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.progress {
+  height: 11px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 22px 0;
+}
+
+.bar {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #22c55e, #2563eb);
+  transition: width .3s;
+}
+
+.question {
+  min-height: 90px;
+  font-size: clamp(1.7rem, 5vw, 2.6rem);
+  font-weight: 900;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.feedback {
+  min-height: 34px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.ok {
+  color: #15803d;
+}
+
+.ko {
+  color: #dc2626;
+}
+
+.result-card {
+  text-align: center;
+}
+
+.result-big {
+  font-size: 56px;
+  font-weight: 900;
+  color: #2563eb;
+}
+
+.coach {
+  background: #f8fafc;
+  border-radius: 18px;
+  padding: 18px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+@media (max-width: 640px) {
+  .subjects-grid,
+  .option-grid,
+  .signup-form {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .primary,
+  .secondary {
+    width: 100%;
+  }
+
+  .card,
+  .hero {
+    border-radius: 22px;
+  }
+}
